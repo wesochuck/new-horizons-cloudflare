@@ -75,7 +75,7 @@ h1 {
   margin-bottom: 2.5rem;
 }
 
-.alert-box strong {
+.alert-box-title {
   color: var(--danger);
   display: block;
   font-size: 1.1rem;
@@ -158,12 +158,19 @@ a:hover::after {
 }
 
 .contact-highlight {
-  display: inline-block;
+  display: inline;
   background-color: var(--primary-light);
-  padding: 0.2rem 0.5rem;
+  padding: 0.15rem 0.4rem;
   border-radius: 6px;
   font-weight: 600;
   color: var(--primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.contact-highlight:hover {
+  background-color: var(--primary);
+  color: var(--card-bg);
 }
 
 .address-block {
