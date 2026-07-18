@@ -2,6 +2,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "new-horizons-cloudflare",
   "compatibility_date": "2026-07-10",
+  "cache": {
+    "enabled": true,
+  },
   "observability": {
     "enabled": true
   },
